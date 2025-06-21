@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LEGO Mario Admin Panel</title>
+  <style>
+    body {
+      background: #121212;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #ff5555;
+    }
+    .section {
+      background: #1f1f1f;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 1000px;
+    }
+    .section h2 {
+      color: #ffa500;
+    }
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    button {
+      flex: 1 1 150px;
+      background: #2a2a2a;
+      border: 1px solid #444;
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>LEGO Mario Admin Panel</h1>
+
+  <div class="section">
+    <h2>🔌 Connection</h2>
+    <div class="button-grid">
+      <button onclick="connectToMario()">🔗 Connect to Mario</button>
+      <button onclick="disconnectMario()">❌ Disconnect</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎮 Game Actions</h2>
+    <div class="button-grid">
+      <button>▶️ Start Course</button>
+      <button>⏹️ End Course</button>
+      <button>🪙 Add 10 Coins</button>
+      <button>💣 Take Damage</button>
+      <button>💀 Lose a Life</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🧤 Power-Up Suits</h2>
+    <div class="button-grid">
+      <button>🔥 Fire Mario</button>
+      <button>🐈 Cat Mario</button>
+      <button>🌎 Propeller Mario</button>
+      <button>❄️ Penguin Mario</button>
+      <button>🐝 Bee Mario</button>
+      <button>🧱 Remove Power-Up</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>👾 Enemies</h2>
+    <div class="button-grid">
+      <button>🐢 Defeat Koopa</button>
+      <button>👻 Defeat Boo</button>
+      <button>🔥 Defeat Bowser Jr.</button>
+      <button>👿 Spawn Random Enemy</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎵 Sound & Effects</h2>
+    <div class="button-grid">
+      <button>🎵 Coin Sound</button>
+      <button>📢 Mario Voice</button>
+      <button>📉 Mute</button>
+      <button>💬 Speak Custom</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🛠 Admin Tools</h2>
+    <div class="button-grid">
+      <button>🔁 Reboot</button>
+      <button>📦 Update Firmware</button>
+      <button>🔍 Scan Sensors</button>
+    </div>
+  </div>
+
+  <script src="bluetooth.js"></script>
+</body>
+</html>
